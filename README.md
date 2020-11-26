@@ -1,2 +1,5 @@
 # ELFX
-Like GitHub, but for db.
+
+#### TODOs
+- Unified database and JSON model.
+- Run functions (start with email, rss, )
