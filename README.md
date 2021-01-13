@@ -2,4 +2,6 @@
 
 #### TODOs
 - Unified database and JSON model.
-- Run functions (start with email, rss, )
+- Multi-tagging and sorting
+- Run serverless and standard functions (start with email, rss, and custom)
+- ELFX Discovery
