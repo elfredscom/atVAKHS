@@ -12,16 +12,31 @@
   <style>
     body { margin: 24px; color: black; background: white; }
     a, a:visited, a:hover, a:active { color: #0000ee; }
-    h1 { margin: 0 0 48px; line-height: 1; }
+    h1 { width: max-content; margin: 0 0 48px; line-height: 1; }
     h2 { font-size: 1em; }
     nav { margin-top: 40px; }
     @media (prefers-color-scheme: dark) {
       body { color: white; background: black; }
       a, a:visited, a:hover, a:active { color: #8ab4f8; }
     }
-    .wordmark { display: inline-block; white-space: pre; font: 10px/1 "Courier New", monospace; }
-    .wave { font-weight: bold; }
+    .wordmark {
+      position: relative;
+      display: inline-block;
+      width: 236px;
+      height: 146px;
+      font: bold 10px/1 "Courier New", monospace;
+      white-space: pre;
+    }
+    .glyph {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 6px;
+      height: 10px;
+    }
     .jade { color: #00bb77; }
+    .glyph[data-state="hidden"] { display: none; }
+    .glyph[data-state="next"] { color: #888888; }
   </style>
 </head>
 <body>
@@ -30,9 +45,9 @@
 <span class="filler" data-column="0" data-row="1">{</span><span class="filler" data-column="1" data-row="1">Q</span><span class="filler" data-column="2" data-row="1">/</span><span class="filler" data-column="3" data-row="1">J</span><span class="filler" data-column="4" data-row="1">7</span>              <span class="filler" data-column="19" data-row="1">4</span><span class="filler" data-column="20" data-row="1">U</span><span class="filler" data-column="21" data-row="1">S</span><span class="filler" data-column="22" data-row="1">+</span><span class="filler" data-column="23" data-row="1">X</span>LN<span class="filler" data-column="26" data-row="1">$</span><span class="filler" data-column="27" data-row="1">*</span><span class="filler" data-column="28" data-row="1">_</span><span class="filler" data-column="29" data-row="1">T</span>
  <span class="filler" data-column="1" data-row="2">W</span><span class="filler" data-column="2" data-row="2">L</span><span class="filler" data-column="3" data-row="2">%</span><span class="filler" data-column="4" data-row="2">\</span>L            <span class="filler" data-column="18" data-row="2">;</span><span class="filler" data-column="19" data-row="2">}</span><span class="filler" data-column="20" data-row="2">&#x27;</span><span class="filler" data-column="21" data-row="2">Y</span><span class="filler" data-column="22" data-row="2">]</span><span class="filler" data-column="23" data-row="2">E</span>L<span class="filler" data-column="25" data-row="2">!</span>Y<span class="filler" data-column="27" data-row="2">V</span><span class="filler" data-column="28" data-row="2">&lt;</span><span class="filler" data-column="29" data-row="2">K</span><span class="filler" data-column="30" data-row="2">A</span>
  <span class="filler" data-column="1" data-row="3">R</span><span class="filler" data-column="2" data-row="3">=</span><span class="filler" data-column="3" data-row="3">`</span><span class="filler" data-column="4" data-row="3">-</span>O           <span class="filler" data-column="17" data-row="3">0</span><span class="filler" data-column="18" data-row="3">?</span><span class="filler" data-column="19" data-row="3">&amp;</span><span class="filler" data-column="20" data-row="3">M</span><span class="filler" data-column="21" data-row="3">|</span>     <span class="filler" data-column="27" data-row="3">:</span><span class="filler" data-column="28" data-row="3">#</span><span class="filler" data-column="29" data-row="3">6</span><span class="filler" data-column="30" data-row="3">~</span>A
-  ALI<span class="jade">V</span>E         V<span class="filler" data-column="17" data-row="4">N</span><span class="filler" data-column="18" data-row="4">&gt;</span><span class="filler" data-column="19" data-row="4">B</span><span class="filler" data-column="20" data-row="4">C</span>       <span class="filler" data-column="28" data-row="4">1</span><span class="filler" data-column="29" data-row="4">&quot;</span><span class="filler" data-column="30" data-row="4">F</span>U<span class="filler" data-column="32" data-row="4">8</span>
+  ALI<span class="jade" data-column="5" data-row="4">V</span>E         V<span class="filler" data-column="17" data-row="4">N</span><span class="filler" data-column="18" data-row="4">&gt;</span><span class="filler" data-column="19" data-row="4">B</span><span class="filler" data-column="20" data-row="4">C</span>       <span class="filler" data-column="28" data-row="4">1</span><span class="filler" data-column="29" data-row="4">&quot;</span><span class="filler" data-column="30" data-row="4">F</span>U<span class="filler" data-column="32" data-row="4">8</span>
   <span class="filler" data-column="2" data-row="5">@</span><span class="filler" data-column="3" data-row="5">^</span><span class="filler" data-column="4" data-row="5">(</span>E<span class="filler" data-column="6" data-row="5">G</span>        <span class="filler" data-column="15" data-row="5">,</span>O<span class="filler" data-column="17" data-row="5">I</span><span class="filler" data-column="18" data-row="5">2</span><span class="filler" data-column="19" data-row="5">5</span>         <span class="filler" data-column="29" data-row="5">9</span><span class="filler" data-column="30" data-row="5">D</span>D<span class="filler" data-column="32" data-row="5">O</span><span class="filler" data-column="33" data-row="5">P</span>
-   <span class="filler" data-column="3" data-row="6">.</span><span class="filler" data-column="4" data-row="6">3</span><span class="filler" data-column="5" data-row="6">Z</span>F<span class="filler" data-column="7" data-row="6">H</span>      <span class="filler" data-column="14" data-row="6">[</span><span class="filler" data-column="15" data-row="6">)</span>I<span class="filler" data-column="17" data-row="6">{</span><span class="filler" data-column="18" data-row="6">Q</span>          BR<span class="jade">A</span>VE
+   <span class="filler" data-column="3" data-row="6">.</span><span class="filler" data-column="4" data-row="6">3</span><span class="filler" data-column="5" data-row="6">Z</span>F<span class="filler" data-column="7" data-row="6">H</span>      <span class="filler" data-column="14" data-row="6">[</span><span class="filler" data-column="15" data-row="6">)</span>I<span class="filler" data-column="17" data-row="6">{</span><span class="filler" data-column="18" data-row="6">Q</span>          BR<span class="jade" data-column="31" data-row="6">A</span>VE
     <span class="filler" data-column="4" data-row="7">/</span><span class="filler" data-column="5" data-row="7">J</span>L<span class="filler" data-column="7" data-row="7">7</span><span class="filler" data-column="8" data-row="7">4</span>    <span class="filler" data-column="13" data-row="7">U</span><span class="filler" data-column="14" data-row="7">S</span><span class="filler" data-column="15" data-row="7">+</span>C<span class="filler" data-column="17" data-row="7">X</span>            <span class="filler" data-column="30" data-row="7">$</span>C<span class="filler" data-column="32" data-row="7">*</span><span class="filler" data-column="33" data-row="7">_</span><span class="filler" data-column="34" data-row="7">T</span>
      <span class="filler" data-column="5" data-row="8">W</span>E<span class="filler" data-column="7" data-row="8">L</span><span class="filler" data-column="8" data-row="8">%</span><span class="filler" data-column="9" data-row="8">\</span><span class="filler" data-column="10" data-row="8">;</span><span class="filler" data-column="11" data-row="8">}</span><span class="filler" data-column="12" data-row="8">&#x27;</span>FREE             <span class="filler" data-column="30" data-row="8">Y</span>I<span class="filler" data-column="32" data-row="8">]</span><span class="filler" data-column="33" data-row="8">E</span><span class="filler" data-column="34" data-row="8">!</span>
       SOVEREIGN<span class="filler" data-column="15" data-row="9">V</span><span class="filler" data-column="16" data-row="9">&lt;</span>              T<span class="filler" data-column="32" data-row="9">K</span><span class="filler" data-column="33" data-row="9">A</span><span class="filler" data-column="34" data-row="9">R</span><span class="filler" data-column="35" data-row="9">=</span>
@@ -50,26 +65,230 @@
     </nav>
   </main>
   <script>
-    const fillerCharacters = Array.from(document.querySelectorAll('.filler')).sort((a, b) =>
-      Number(a.dataset.column) - Number(b.dataset.column) ||
-      Number(a.dataset.row) - Number(b.dataset.row)
-    );
-    let rippleCursor = 0;
-    const characterPool = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const artwork = document.querySelector('.wordmark');
+    const rows = artwork.textContent.split('\n');
+    const fillerKeys = new Set(Array.from(artwork.querySelectorAll('.filler'),
+      element => `${element.dataset.column},${element.dataset.row}`));
+    const jadeKeys = new Set(Array.from(artwork.querySelectorAll('.jade'),
+      element => `${element.dataset.column},${element.dataset.row}`));
+    const columns = 36;
+    const rowCount = 11;
+    const pool = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+    const original = new Map();
+    rows.forEach((row, y) => Array.from(row).forEach((text, x) => {
+      if (text !== ' ') original.set(`${x},${y}`, { text, jade: jadeKeys.has(`${x},${y}`), fixed: !fillerKeys.has(`${x},${y}`) });
+    }));
+    // Place OPEN/VOICE near the centre, crossing on their shared O.
+    const formerCrossword = [[16,4],[16,5],[16,6],[16,7],[16,8],[13,8],[14,8],[15,8]];
+    formerCrossword.forEach(([x,y]) => original.set(`${x},${y}`, {
+      text: pool[(x * 17 + y * 29) % pool.length], jade:false, fixed:false
+    }));
+    Array.from('VOICE').forEach((text,index) => original.set(`17,${3 + index}`, {text,jade:false,fixed:true}));
+    Array.from('OPEN').forEach((text,index) => original.set(`${17 + index},4`, {text,jade:false,fixed:true}));
+    const tokenAt = (x, y) => original.get(`${x},${y}`) || {
+      text: pool[(x * 17 + y * 29) % pool.length], jade: false, fixed: false
+    };
+    const filter = predicate => new Map(Array.from(original).filter(([key]) => {
+      const [x, y] = key.split(',').map(Number);
+      return predicate(x, y);
+    }));
 
-    window.setInterval(() => {
-      if (document.hidden || reducedMotion.matches) return;
-      for (let i = 0; i < 6; i++) {
-        const character = fillerCharacters[rippleCursor];
-        let nextIndex = Math.floor(Math.random() * characterPool.length);
-        if (characterPool[nextIndex] === character.textContent) {
-          nextIndex = (nextIndex + 1) % characterPool.length;
-        }
-        character.textContent = characterPool[nextIndex];
-        rippleCursor = (rippleCursor + 1) % fillerCharacters.length;
+    // Related cross-sections of one wave, including its two logo portions.
+    const anchors = {
+      wave: original,
+      v: filter((x, y) => x <= 24 || (y === 0 && x <= 27)),
+      a: filter((x, y) => x >= 13 || (y >= 8 && x >= 10 && x <= 16)),
+      infinity: filter((x, y) => !(x === 0 && y <= 1) && !(x === 1 && y >= 2 && y <= 3)
+        && !(x === 35 && y >= 9) && !(x === 34 && y >= 7 && y <= 8)),
+      center: new Map(),
+      centerfree: new Map()
+    };
+    // Rounded crossword fragments, with changing filler around shared letters.
+    const centralFootprint = [[17,4],[18,4],[15,5],[16,5],[17,5],[18,5],[19,5],[17,6],[18,6]];
+    centralFootprint.forEach(([x,y]) => {
+      const filler = {text:pool[(x * 17 + y * 29) % pool.length],jade:false,fixed:false};
+      anchors.center.set(`${x},${y}`, filler);
+      anchors.centerfree.set(`${x},${y}`, filler);
+    });
+    // BE descends into the E of horizontal ME; U and I sit on opposite sides.
+    [[4,17,'U'],[4,18,'B'],[5,17,'M'],[5,18,'E'],[6,17,'I']]
+      .forEach(([y,x,text]) => anchors.center.set(`${x},${y}`, {text, jade:false, fixed:true}));
+    // WE and BE descend into the two E letters of horizontal FREE.
+    [[4,17,'W'],[4,18,'B'],[5,15,'F'],[5,16,'R'],[5,17,'E'],[5,18,'E']]
+      .forEach(([y,x,text]) => anchors.centerfree.set(`${x},${y}`, {text, jade:false, fixed:true}));
+    const centralWords = [anchors.center, anchors.centerfree];
+    // Keep the wave, trim its two open tips, and add inward returns with gaps.
+    const inwardHook = [[0, 4, 9], [1, 7, 12], [2, 10, 13], [3, 12, 13], [4, 13, 13]];
+    inwardHook.forEach(([y, first, last]) => {
+      for (let x = first; x <= last; x++) {
+        anchors.infinity.set(`${x},${y}`, tokenAt(x, y));
+        anchors.infinity.set(`${35 - x},${10 - y}`, tokenAt(35 - x, 10 - y));
       }
-    }, 1000);
+    });
+
+    const neighbors = key => {
+      const [x, y] = key.split(',').map(Number);
+      const result = [];
+      for (let dy = -1; dy <= 1; dy++) {
+        for (let dx = -1; dx <= 1; dx++) {
+          if (dx || dy) result.push(`${x + dx},${y + dy}`);
+        }
+      }
+      return result;
+    };
+    const centerDistance = key => {
+      const [x, y] = key.split(',').map(Number);
+      return Math.hypot((x - 17.5) * 0.6, y - 5);
+    };
+    function connectedDistances(mask, shared) {
+      const roots = Array.from(shared).filter(key => mask.has(key));
+      if (!roots.length && mask.size) roots.push(Array.from(mask.keys()).sort((a, b) => centerDistance(a) - centerDistance(b))[0]);
+      const distance = new Map(roots.map(key => [key, 0]));
+      const queue = roots.slice();
+      for (let index = 0; index < queue.length; index++) {
+        const key = queue[index];
+        neighbors(key).forEach(neighbor => {
+          if (mask.has(neighbor) && !distance.has(neighbor)) {
+            distance.set(neighbor, distance.get(key) + 1);
+            queue.push(neighbor);
+          }
+        });
+      }
+      return distance;
+    }
+    const bilateral = keys => [
+      keys.filter(key => Number(key.split(',')[0]) < 17.5),
+      keys.filter(key => Number(key.split(',')[0]) >= 17.5)
+    ];
+    function transitionOrder(from, to, mode = 'outsideIn') {
+      const shared = new Set(Array.from(from.keys()).filter(key => to.has(key)));
+      const removalDistance = connectedDistances(from, shared);
+      const additionDistance = connectedDistances(to, shared);
+      const remaining = new Set(Array.from(from.keys()).filter(key => !to.has(key)));
+      const occupied = new Set(from.keys());
+      const removals = [];
+      // The occasional inverse cut starts beside the protected centre.
+      if (mode === 'insideOut') {
+        removals.push(...Array.from(remaining).sort((a,b) => (removalDistance.get(a) ?? 0) - (removalDistance.get(b) ?? 0) || centerDistance(a) - centerDistance(b)));
+        remaining.clear();
+      }
+      // Normally peel the exposed boundary, farthest from the retained part.
+      while (remaining.size) {
+        const boundary = Array.from(remaining).filter(key => neighbors(key).some(neighbor => !occupied.has(neighbor)));
+        const candidates = boundary.length ? boundary : Array.from(remaining);
+        candidates.sort((a, b) => (removalDistance.get(b) ?? 0) - (removalDistance.get(a) ?? 0) || centerDistance(b) - centerDistance(a));
+        const key = candidates[0];
+        removals.push(key);
+        remaining.delete(key);
+        occupied.delete(key);
+      }
+      // Grow along the target's connected paths from the retained inner part.
+      const additions = Array.from(to.keys()).filter(key => !from.has(key))
+        .sort((a, b) => (additionDistance.get(a) ?? 0) - (additionDistance.get(b) ?? 0) || centerDistance(a) - centerDistance(b));
+      const replacements = Array.from(shared).filter(key => !equal(from.get(key), to.get(key)))
+        .sort((a,b) => centerDistance(a) - centerDistance(b));
+      return { removals: bilateral(removals), additions: bilateral(additions), replacements: bilateral(replacements) };
+    }
+
+    const equal = (a, b) => a?.text === b?.text && Boolean(a?.jade) === Boolean(b?.jade);
+    const sequence = [];
+    const segments = [
+      ['center','v'], ['v','wave'], ['wave','infinity'], ['infinity','a'], ['a','center'],
+      ['center','a'], ['a','wave'], ['wave','infinity'], ['infinity','v'], ['v','center'],
+      ['center','v'], ['v','wave'], ['wave','infinity'], ['infinity','a'], ['a','center'],
+      ['center','a'], ['a','wave'], ['wave','infinity'], ['infinity','center','insideOut']
+    ];
+    const holdSteps = 2;
+    const transitionSteps = 18;
+    let centerVisit = 0;
+    segments.forEach(([start, end, mode]) => {
+      const from = start === 'center' ? centralWords[centerVisit % centralWords.length] : anchors[start];
+      const to = end === 'center' ? centralWords[++centerVisit % centralWords.length] : anchors[end];
+      for (let hold = 0; hold < holdSteps; hold++) sequence.push(from);
+      const order = transitionOrder(from, to, mode);
+      for (let step = 1; step <= transitionSteps; step++) {
+        const frame = new Map(from);
+        // Advance both halves, and both growth/erosion fronts, on the same tick.
+        order.removals.forEach(side => side.slice(0, Math.ceil(side.length * step / transitionSteps)).forEach(key => frame.delete(key)));
+        order.additions.forEach(side => side.slice(0, Math.ceil(side.length * step / transitionSteps)).forEach(key => frame.set(key, to.get(key))));
+        order.replacements.forEach(side => side.slice(0, Math.ceil(side.length * step / transitionSteps)).forEach(key => frame.set(key, to.get(key))));
+        sequence.push(frame);
+      }
+    });
+
+    // One fixed grid: full ink, hidden, or a grey preview of the next slice diff.
+    const cells = [];
+    const fragment = document.createDocumentFragment();
+    for (let y = 0; y < rowCount; y++) {
+      for (let x = 0; x < columns; x++) {
+        const element = document.createElement('span');
+        element.className = 'glyph';
+        element.dataset.column = x;
+        element.dataset.row = y;
+        element.style.left = `${10 + x * 6}px`;
+        element.style.top = `${18 + y * 10}px`;
+        element.dataset.state = 'hidden';
+        fragment.appendChild(element);
+        cells.push({key: `${x},${y}`, element});
+      }
+    }
+    artwork.replaceChildren(fragment);
+    const query = new URLSearchParams(window.location.search);
+    const requestedFrame = query.get('frame') || ({wave:'wave', middle:'v', infinity:'infinity'})[query.get('slice')];
+    const studyFrame = anchors[requestedFrame === 'dot' ? 'center' : requestedFrame];
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const stepMilliseconds = 240;
+    let cursor = (holdSteps + transitionSteps) *
+      (query.get('start') === 'insideout' ? segments.length - 1 : 2);
+    const characterOverrides = new Map();
+    let characterCursor = 0;
+    function evolvingSlice(base) {
+      const editable = Array.from(base).filter(([,token]) => !token.fixed)
+        .sort(([a],[b]) => {
+          const [ax,ay] = a.split(',').map(Number), [bx,by] = b.split(',').map(Number);
+          return ax - bx || ay - by;
+        });
+      for (let change = 0; change < Math.min(2, editable.length); change++) {
+        const [key,token] = editable[characterCursor % editable.length];
+        const previous = characterOverrides.get(key) || token.text;
+        const index = (Math.max(0,pool.indexOf(previous)) + 13) % pool.length;
+        characterOverrides.set(key,pool[index]);
+        characterCursor++;
+      }
+      return new Map(Array.from(base, ([key,token]) => [key,
+        !token.fixed && characterOverrides.has(key) ? {...token,text:characterOverrides.get(key)} : token]));
+    }
+    let currentSlice = evolvingSlice(sequence[cursor]);
+    let nextSlice = evolvingSlice(sequence[(cursor + 1) % sequence.length]);
+
+    function showFrame(current, next) {
+      cells.forEach(({key, element}) => {
+        const now = current.get(key);
+        const upcoming = next.get(key);
+        const changing = !equal(now, upcoming);
+        const token = changing ? upcoming || now : now;
+        element.dataset.state = !token ? 'hidden' : changing ? 'next' : 'full';
+        element.textContent = token?.text || '';
+        element.classList.toggle('jade', Boolean(token?.jade) && !changing);
+      });
+    }
+    function render() {
+      if (studyFrame || reducedMotion.matches) {
+        const frame = studyFrame || anchors.wave;
+        showFrame(frame, frame);
+      } else {
+        showFrame(currentSlice, nextSlice);
+      }
+    }
+    render();
+    window.setInterval(() => {
+      if (document.hidden || reducedMotion.matches || studyFrame) return;
+      cursor = (cursor + 1) % sequence.length;
+      currentSlice = nextSlice;
+      nextSlice = evolvingSlice(sequence[(cursor + 1) % sequence.length]);
+      render();
+    }, stepMilliseconds);
+    reducedMotion.addEventListener('change', render);
   </script>
 </body>
 </html>
