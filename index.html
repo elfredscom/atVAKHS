@@ -57,7 +57,7 @@
 
     window.setInterval(() => {
       if (document.hidden || reducedMotion.matches) return;
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < 6; i++) {
         const character = fillerCharacters[rippleCursor];
         let nextIndex = Math.floor(Math.random() * characterPool.length);
         if (characterPool[nextIndex] === character.textContent) {
