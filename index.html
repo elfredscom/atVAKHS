@@ -110,11 +110,12 @@
       anchors.center.set(`${x},${y}`, filler);
       anchors.centerfree.set(`${x},${y}`, filler);
     });
-    // BE descends into the E of horizontal ME; U and I sit on opposite sides.
-    [[4,17,'U'],[4,18,'B'],[5,17,'M'],[5,18,'E'],[6,17,'I']]
+    // I*U shares the asterisk in BE*ME; WE crosses its first E, with US below.
+    [[4,16,'W'],[4,17,'I'],[5,15,'B'],[5,16,'E'],[5,17,'*'],[5,18,'M'],[5,19,'E'],[6,17,'U'],[6,18,'S']]
       .forEach(([y,x,text]) => anchors.center.set(`${x},${y}`, {text, jade:false, fixed:true}));
-    // WE and BE descend into the two E letters of horizontal FREE.
-    [[4,17,'W'],[4,18,'B'],[5,15,'F'],[5,16,'R'],[5,17,'E'],[5,18,'E']]
+    anchors.center.delete('18,4');
+    // WEB crosses FREE at E: WE reads downward and BE upward.
+    [[4,18,'W'],[5,15,'F'],[5,16,'R'],[5,17,'E'],[5,18,'E'],[6,18,'B']]
       .forEach(([y,x,text]) => anchors.centerfree.set(`${x},${y}`, {text, jade:false, fixed:true}));
     const centralWords = [anchors.center, anchors.centerfree];
     // Keep the wave, trim its two open tips, and add inward returns with gaps.
